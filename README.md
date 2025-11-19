@@ -1,10 +1,16 @@
 # Nazrul CRUD - Laravel CRUD Generator Package
 
-A beautiful Bootstrap CRUD package for Laravel with one-click installation.
-https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel
-https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php
-https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap
-https://img.shields.io/badge/License-MIT-green?style=for-the-badge
+<section>
+        <h1>Nazrul CRUD – Laravel CRUD Generator Package</h1>
+        <p>A beautiful and powerful Laravel CRUD generator with Bootstrap 5 UI.</p>
+
+        <div class="badge">
+            <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel">
+            <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php">
+            <img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap">
+            <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+        </div>
+    </section>
 
 A powerful, beautiful, and intuitive CRUD generator package for Laravel that automatically creates complete admin panels with Bootstrap 5 UI. Save hours of development time with one command!
 
