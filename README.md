@@ -1,20 +1,25 @@
-# Nazrul CRUD Package
+# Nazrul CRUD - Laravel CRUD Generator Package
 
 A beautiful Bootstrap CRUD package for Laravel with one-click installation.
+https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel
+https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php
+https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=for-the-badge&logo=bootstrap
+https://img.shields.io/badge/License-MIT-green?style=for-the-badge
 
-![CRUD Package](https://via.placeholder.com/800x400?text=Nazrul+CRUD+Package)
+A powerful, beautiful, and intuitive CRUD generator package for Laravel that automatically creates complete admin panels with Bootstrap 5 UI. Save hours of development time with one command!
 
-## Features
+✨ Features
 
-- ✅ Complete CRUD operations
-- ✅ Bootstrap 5 Design
-- ✅ Search & Filter functionality
-- ✅ Image upload with preview
-- ✅ Responsive table design
-- ✅ One-click installation
-- ✅ Statistics dashboard
-- ✅ Form validation
-- ✅ Sweet alerts
+🚀 Core Features
+
+- ✅ One-Command CRUD Generation - Generate complete CRUD operations with single command
+- ✅ Beautiful Bootstrap 5 UI - Modern, responsive, and professional interface
+- ✅ Automatic Code Generation - Models, Controllers, Migrations, Views, Routes
+- ✅ Image Upload with Preview - Drag & drop image upload with preview functionality
+- ✅ Advanced Search & Filters - Smart search with multiple filter options
+- ✅ Form Validation - Built-in client and server side validation
+- ✅ SweetAlert Notifications - Beautiful alert notifications
+- ✅ Statistics Dashboard - Beautiful charts and statistics
 
 ## Requirements
 
@@ -25,15 +30,13 @@ A beautiful Bootstrap CRUD package for Laravel with one-click installation.
 
 ## Installation
 
+
 ### Method 1: Simple Installation
 ```bash
 # Install package
-composer require nazrulcrud/crud:@dev
-php artisan nazrulcrud:install
-
+composer require nazrulcrud/crud
 # Publish and run migrations
-php artisan vendor:publish --provider="NazrulCrud\Crud\CrudServiceProvider" --tag=crud-migrations
-php artisan migrate
+php artisan vendor:publish --provider="NazrulCrud\\Crud\\CrudServiceProvider"
 
 # Create images directory
 mkdir public/images
