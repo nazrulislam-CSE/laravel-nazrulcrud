@@ -33,11 +33,19 @@ A powerful, beautiful, and intuitive CRUD generator package for Laravel that aut
 
 ### Method 1: Simple Installation
 ```bash
-# Install package
-composer require nazrulcrud/crud
-# Publish and run migrations
-php artisan vendor:publish --provider="NazrulCrud\\Crud\\CrudServiceProvider"
 
-# Create images directory
+# 1.Install package
+composer require nazrulcrud/crud:dev-main
+
+# 2. Publish
+php artisan vendor:publish --provider="NazrulCrud\\Crud\\CrudServiceProvider" --tag="crud-migrations"
+
+# 3. Migrations Run
+php artisan migrate
+
+# 4. Check Status
+php artisan migrate:status
+
+# 5. Create images directory
 mkdir public/images
 chmod 755 public/images
