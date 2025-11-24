@@ -14,10 +14,10 @@ class CrudServiceProvider extends ServiceProvider
         // Views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'crud');
         
-        // Migrations
+        // Migrations (এইটা থাকবে)
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         
-        // Publishing assets
+        // ✅ FIX: Publishing assets - runningInConsole() check বাদ দিন
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/crud'),
         ], 'crud-views');
@@ -26,7 +26,7 @@ class CrudServiceProvider extends ServiceProvider
             __DIR__.'/../config/crud.php' => config_path('crud.php'),
         ], 'crud-config');
         
-        // ✅ এই লাইনটি যোগ করুন migrations publish করার জন্য
+        // ✅ FIX: Migration publish - runningInConsole() check বাদ দিন  
         $this->publishes([
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'crud-migrations');
