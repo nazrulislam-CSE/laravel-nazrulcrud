@@ -9,9 +9,7 @@ class CrudServiceProvider extends ServiceProvider
     public function boot()
     {
         // Routes
-        if (file_exists(__DIR__.'/../routes/web.php')) {
-            $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        }
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         
         // Views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'crud');
@@ -28,7 +26,7 @@ class CrudServiceProvider extends ServiceProvider
             __DIR__.'/../config/crud.php' => config_path('crud.php'),
         ], 'crud-config');
         
-        // ✅ মাইগ্রেশন পাবলিশ যোগ করুন
+        // ✅ এই লাইনটি যোগ করুন migrations publish করার জন্য
         $this->publishes([
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'crud-migrations');
