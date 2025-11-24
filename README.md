@@ -121,4 +121,4 @@ chmod 755 public/images
 
 <hr>
 
-<p align="center">Made with ❤️ by <strong>Nazrul Islam</strong></p>
+<p align="center">Made with ❤️ by <strong>Nazrul Islam Suzon</strong></p>
